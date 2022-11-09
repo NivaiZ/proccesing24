@@ -1,6 +1,6 @@
 ## Тестовое задание для Цифрового элемента
 
-[Демо проекта](https://nivaiz.github.io/***/build/index.html)
+[Демо проекта](https://nivaiz.github.io/proccesing24/build/index.html)
 
 Вёрстка: [Илья Галятдинов](https://github.com/NivaiZ/)
 
