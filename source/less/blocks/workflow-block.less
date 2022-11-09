@@ -1,0 +1,77 @@
+.workflow-block__item {
+  background-color: @extra-blue;
+  color: @basic-white;
+  padding: 44px 30px 30px 30px;
+  position: relative;
+}
+
+.workflow-block__list {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: @basic-breakpoints) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.workflow-block__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.workflow-block__svg {
+  overflow: hidden;
+  transition: 0.5s scale;
+
+  &:hover {
+    scale: 1.5;
+  }
+}
+
+.workflow-block__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.workflow-block__content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.workflow-block__title {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.workflow-block__text--small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.workflow-block__link {
+  padding-top: 16px;
+}
+
+.workflow-block__heading {
+  .heading();
+
+  @media (max-width: @basic-breakpoints) {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+.workflow-block {
+  padding: 70px 0 70px 0;
+
+  @media (max-width: @basic-breakpoints) {
+    padding: 20px 0 20px 0;
+  }
+}

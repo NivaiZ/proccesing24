@@ -1,0 +1,83 @@
+.fuel-costs__list {
+  background-color: @extra-blue;
+  padding: 20px 17px 21px 19px;
+}
+
+.fuel-costs {
+  padding-top: 100px;
+
+  @media (max-width: @basic-breakpoints) {
+    padding-top: 50px;
+    overflow-x: scroll;
+  }
+}
+
+.fuel-costs__item {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: @basic-white;
+  padding: 20px 30px;
+  text-align: start;
+}
+
+.fuel-cost__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  @media (max-width: @basic-breakpoints) {
+    width: unset;
+  }
+}
+
+.fuel-costs__list tr {
+  width: 100%;
+}
+
+.fuel-costs__row {
+  width: 100%;
+  border: 1px solid @extra-white;
+}
+
+.fuel-costs__column {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+  padding: 16px 30px;
+  vertical-align: top;
+
+  @media (max-width: @basic-breakpoints) {
+    padding: 10px 15px;
+  }
+}
+
+.fuel-cost__body {
+  border: 1px solid @extra-white;
+}
+
+.fuel-costs__column--blue {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: @basic-white;
+  background-color: @basic-blue;
+}
+
+.fuel-cost__column--border {
+  border-right: 1px solid @extra-white;
+}
+
+.fuel-costs__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-top: 0;
+  margin-bottom: 48px;
+
+  @media (max-width: @basic-breakpoints) {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}

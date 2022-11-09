@@ -1,0 +1,37 @@
+.dropdown-menu {
+  opacity: 0;
+  list-style: none;
+  right: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.dropdown-menu__show {
+  display: flex;
+  flex-direction: column;
+  transition: visibility 0s 0s, opacity 0.6s ease;
+  position: absolute;
+  visibility: visible;
+  top: 20px;
+  opacity: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 30px;
+  width: max-content;
+  height: min-content;
+  background-color: @basic-white;
+  box-shadow: 0 0 10px hsl(0deg 0% 39% / 50%);
+  z-index: 1;
+}
+
+.dropdown-menu__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: @extra-black;
+}
+
+.dropdown-menu__checklist {
+  padding: 10px;
+}

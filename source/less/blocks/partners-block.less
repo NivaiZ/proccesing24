@@ -1,0 +1,33 @@
+.partners-block__heading {
+  .heading();
+
+  @media (max-width: @basic-breakpoints) {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+.partners-block__list.swiper-wrapper {
+  align-items: center;
+}
+
+.partners-block__item.swiper-pagination {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.partners-block {
+  padding: 70px 0 70px 0;
+}
+
+.partners-block__content.swiper {
+  &::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    content: "";
+    border-bottom: 1px solid @extra-white;
+    bottom: 1px;
+  }
+}
