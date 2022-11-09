@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>processing24</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <meta name="description" content="Тестовое задание для Эврики">
+  <meta name="keywords" content="Эврика, процессинг24, processing24">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" aria-label="Логотип">
+        <a href="#" class="page-header__logo" aria-label="Логотип">
           <img class="page-header__img" src="./img/logo.png" alt="Логотип">
         </a>
 
@@ -23,7 +25,8 @@
             <ul class="page-header__list">
 
               <li class="page-header__item page-header__item--positon-block">
-                <a href="tel:+74951278280" class="page-header__link page-header__link--phone-header" tabindex="1">8 (495) 127-82-80
+                <a href="tel:+74951278280" class="page-header__link page-header__link--phone-header" tabindex="1">8
+                  (495) 127-82-80
                   <svg class="page-header__svg" width="18" height="18">
                     <use xlink:href="./img/sprite.svg#mobile-icon__header"></use>
                   </svg>
@@ -37,7 +40,7 @@
               </li>
 
               <li class="page-header__item page-header__item--margin">
-                <a href="#" class="page-header__link page-header__link--background-link"  tabindex="3">
+                <a href="#" class="page-header__link page-header__link--background-link" tabindex="3">
                   <svg class="page-header__svg" width="13" height="15">
                     <use xlink:href="./img/sprite.svg#login-icon__header"></use>
                   </svg>
@@ -157,16 +160,16 @@
             <li class="form-delivery__item">
               <label class="form-delivery__description" for="form__name">Ваше имя</label>
               <input class="form-delivery__entry form-delivery__entry--box-name form-delivery__field" type="text"
-                id="form__name" name="name-user" placeholder="Иван" minlength="3" required>
+                id="form__name" name="name-user" placeholder="Иван" minlength="3" required aria-label="Введите ваше имя">
             </li>
             <li class="form-delivery__item">
               <label class="form-delivery__description" for="form__phone">Номер телефона</label>
               <input class="form-delivery__entry form-delivery__entry--box-name form-delivery__field" type="text"
-                id="form__phone" name="phone-user" placeholder="+7 (___) ___-__-__" required>
+                id="form__phone" name="phone-user" placeholder="+7 (___) ___-__-__" required aria-label="Введите ваш телефон">
             </li>
             <li class="form-delivery__item">
-              <button class="form-delivery__entry form-delivery__entry--box-button" type="submit"
-                id="form__send" aria-label="Заказать топливо">Заказать топливо
+              <button class="form-delivery__entry form-delivery__entry--box-button" type="submit" id="form__send"
+                aria-label="Заказать топливо">Заказать топливо
               </button>
             </li>
           </ul>
@@ -174,7 +177,7 @@
           <ul class="form-delivery__item form-delivery__item--bottom-box">
             <li class="form-delivery__item form-delivery__item--position-box">
               <input class="form-delivery__checkbox form-delivery__field" id="form__checkbox" type="checkbox"
-                name="form-checkbox" required>
+                name="form-checkbox" required aria-label="Чекбокс">
               <label class="form-delivery__consent" for="form__checkbox">Я согласен с условиями обработки
                 данных</label>
             </li>
@@ -307,25 +310,26 @@
             <li class="fuel-delivery__item fuel-delivery__item--position">
               <label class="fuel-delivery__caption" for="fuel-range">Объём топлива</label>
               <input class="fuel-delivery__output fuel-delivery__decoration" name="fuelquantity" type="text"
-                value="1670" required>
-              <input class="fuel-delivery__range" type="range" id="fuel-range" name="fuel_range" min="0" max="32000" required>
+                value="1670" required aria-label="Объем топлива">
+              <input class="fuel-delivery__range" type="range" id="fuel-range" name="fuel_range" min="0" max="32000"
+                required aria-label="Передвигайте ползунок для увеличения количества топлива">
             </li>
 
             <li class="fuel-delivery__item">
               <label class="fuel-delivery__caption" for="place-delivery">Место доставки</label>
               <input class="fuel-delivery__decoration" name="place" type="text" id="place-delivery"
-                placeholder="Укажите место" required>
+                placeholder="Укажите место" required aria-label="Введите место доставки">
             </li>
 
             <li class="fuel-delivery__item">
               <label class="fuel-delivery__caption" for="name">Ваше имя</label>
-              <input class="fuel-delivery__decoration" name="name" type="text" id="name" placeholder="Иван" required>
+              <input class="fuel-delivery__decoration" name="name" type="text" id="name" placeholder="Иван" required aria-label="Введите ваше имя">
             </li>
 
             <li class="fuel-delivery__item">
               <label class="fuel-delivery__caption" for="phone">Номер телефона</label>
               <input class="fuel-delivery__decoration" name="your-name" type="text" id="phone"
-                placeholder="+7 (___) ___-__-__" required>
+                placeholder="+7 (___) ___-__-__" required aria-label="Введите ваш телефон">
             </li>
           </ul>
 
@@ -460,7 +464,7 @@
                 <use xlink:href="./img/sprite.svg#certificate-advantages"></use>
               </svg>
               <div class="advantages-block__wrapper">
-                <h3 class="advantages-block__heading">Качество топлива</h3>
+                <h2 class="advantages-block__heading">Качество топлива</h2>
                 <p class="advantages-block__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
                   purus ac nisi sit eget sed et, adipiscing felis.</p>
               </div>
@@ -473,7 +477,7 @@
                 <use xlink:href="./img/sprite.svg#clock-advantages"></use>
               </svg>
               <div class="advantages-block__wrapper">
-                <h3 class="advantages-block__heading">Бережем ваше время и нервы</h3>
+                <h2 class="advantages-block__heading">Бережем ваше время и нервы</h2>
                 <p class="advantages-block__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
                   purus ac nisi sit eget sed et, adipiscing felis.</p>
               </div>
@@ -486,7 +490,7 @@
                 <use xlink:href="./img/sprite.svg#ruble-advantages"></use>
               </svg>
               <div class="advantages-block__wrapper">
-                <h3 class="advantages-block__heading">Цена</h3>
+                <h2 class="advantages-block__heading">Цена</h2>
                 <p class="advantages-block__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
                   purus ac nisi sit eget sed et, adipiscing felis.</p>
               </div>
@@ -499,7 +503,7 @@
                 <use xlink:href="./img/sprite.svg#place-advantages"></use>
               </svg>
               <div class="advantages-block__wrapper">
-                <h3 class="advantages-block__heading">Ваш комфорт—наша забота</h3>
+                <h2 class="advantages-block__heading">Ваш комфорт—наша забота</h2>
                 <p class="advantages-block__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
                   purus ac nisi sit eget sed et, adipiscing felis.</p>
               </div>
@@ -512,7 +516,7 @@
                 <use xlink:href="./img/sprite.svg#shield-advantages"></use>
               </svg>
               <div class="advantages-block__wrapper">
-                <h3 class="advantages-block__heading">Безопасность процесса</h3>
+                <h2 class="advantages-block__heading">Безопасность процесса</h2>
                 <p class="advantages-block__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
                   purus ac nisi sit eget sed et, adipiscing felis.</p>
               </div>
@@ -525,7 +529,7 @@
                 <use xlink:href="./img/sprite.svg#way-advantages"></use>
               </svg>
               <div class="advantages-block__wrapper">
-                <h3 class="advantages-block__heading">Несколько ТС в одном месте?</h3>
+                <h2 class="advantages-block__heading">Несколько ТС в одном месте?</h2>
                 <p class="advantages-block__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
                   purus ac nisi sit eget sed et, adipiscing felis.</p>
               </div>
@@ -541,7 +545,8 @@
         <div class="certificates-block__box">
           <h2 class="certificates-block__heading">Сертификаты качества топлива</h2>
           <div class="certificates-block__navigation">
-            <button class="certificates-block__button swiper-button-prev" type="button" aria-label="Предыдущий"></button>
+            <button class="certificates-block__button swiper-button-prev" type="button"
+              aria-label="Предыдущий"></button>
             <button class="certificates-block__button swiper-button-next" type="button" aria-label="Следующий"></button>
           </div>
         </div>
@@ -549,19 +554,23 @@
         <div class="certificates-block__content swiper mySwiper">
           <ul class="certificates-block__list swiper-wrapper">
             <li class="certificates-block__item swiper-slide">
-              <img class="certificates-block__img" src="./img/certificateconformity1.png" loading="lazy" alt="Сертификт-1">
+              <img class="certificates-block__img" src="./img/certificateconformity1.png" loading="lazy"
+                alt="Сертификт-1">
             </li>
 
             <li class="certificates-block__item swiper-slide">
-              <img class="certificates-block__img" src="./img/certificateconformity2.png" loading="lazy" alt="Сертификт-2">
+              <img class="certificates-block__img" src="./img/certificateconformity2.png" loading="lazy"
+                alt="Сертификт-2">
             </li>
 
             <li class="certificates-block__item swiper-slide">
-              <img class="certificates-block__img" src="./img/certificateconformity3.png" loading="lazy" alt="Сертификт-3">
+              <img class="certificates-block__img" src="./img/certificateconformity3.png" loading="lazy"
+                alt="Сертификт-3">
             </li>
 
             <li class="certificates-block__item swiper-slide">
-              <img class="certificates-block__img" src="./img/certificateconformity4.png" loading="lazy" alt="Сертификт-4">
+              <img class="certificates-block__img" src="./img/certificateconformity4.png" loading="lazy"
+                alt="Сертификт-4">
             </li>
 
             <li class="swiper-pagination"></li>
@@ -642,7 +651,8 @@
     <section class="feedback-form">
       <div class="container">
         <h1 class="feedback-form__title">Остались вопросы?</h1>
-        <p class="feedback-form__text feedback-form__text--position">Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона и мы свяжемся с
+        <p class="feedback-form__text feedback-form__text--position">Готовы ответить на любой Ваш вопрос. Оставьте свой
+          номер телефона и мы свяжемся с
           вами в ближайшее время</p>
         <form class="feedback-form__container" method="post" id="feedback-form">
           <ul class="feedback-form__list">
@@ -650,14 +660,14 @@
             <li class="feedback-form__item">
               <label class="feedback-form__caption" for="feedback__name">
                 <input class="feedback-form__enter" type="text" id="feedback__name" name="feedback--name"
-                  placeholder="Ваше имя" required>
+                  placeholder="Ваше имя" required aria-label="Введите ваше имя">
               </label>
             </li>
 
             <li class="feedback-form__item">
               <label class="feedback-form__caption" for="feedback__phone">
                 <input class="feedback-form__enter" type="text" id="feedback__phone" name="feedback--phone"
-                  placeholder="Номер телефона" required>
+                  placeholder="Номер телефона" required aria-label="Введите ваш телефон">
               </label>
             </li>
 
